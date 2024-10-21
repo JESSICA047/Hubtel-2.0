@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/order.css">
+    <link rel="stylesheet" href="./CSS/shared.css">
+    <title>Order</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar starts here -->
+        <section id="navbar">
+            <div class="navbar">
+                <div>
+                    <a href="http://127.0.0.1:5500/index.html">
+                        <img src="./images/My_Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="menu text-right">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./categories.html">Categories</a></li>
+                        <li><a href="./order.html">Order</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- navbar ends here -->
+    </header>
+
+    <!-- order section starts here -->
+    <section id="order">
+        <h1>Fill this form to confirm your order</h1>
+        <form class="order">
+            <div class="selected">
+                <fieldset id="selected">
+                    <legend>Selected Food</legend>
+                    <img src="./images/banku.jpg" alt="">
+                    <h2>Banku</h2>
+                    <p>GHC 67.99</p>
+                    <label for="fname">Quantity:</label><br>
+                    <input type="number" id="fname" name="fname" min="1" max="100"><br><br>
+                </fieldset>
+            </div>
+
+
+            <div class="delivery">
+                <fieldset id="delivery">
+                    <legend>Delivery Details</legend>
+                    <label for="fnmae">Full name:</label>
+                    <input type="fname" id="fname" name="fname" placeholder="dziedzorm"><br><br>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0000000000"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="name@account.com"><br><br>
+                    <label for="phone">Address:</label>
+                    <input type="add" id="add" name="add" placeholder="Sokode-lokoe"><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </div>
+        </form>
+    </section>
+    <!-- order section ends here -->
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

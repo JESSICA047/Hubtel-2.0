@@ -4,29 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Home</title>
 </head>
 
 <body>
-    <!-- navbar starts here -->
-    <section id="navbar">
-        <div class="navbar">
-            <a href="http://127.0.0.1:5500/home.html">
+    <header>
+        <!-- navbar starts here -->
+        <section id="navbar">
+            <div class="navbar">
                 <div>
-                    <img src="./images/My_Logo.png" alt="">
+                    <a href="http://127.0.0.1:5500/index.html">
+                        <img src="./images/My_Logo.png" alt="">
+                    </a>
+                </div>
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
                 <div class="menu text-right">
                     <ul>
-                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./categories.html">Categories</a></li>
                         <li><a href="./order.html">Order</a></li>
                     </ul>
                 </div>
-            </a>
-        </div>
-    </section>
-    <!-- navbar ends here -->
+            </div>
+        </section>
+        <!-- navbar ends here -->
+    </header>
 
     <!-- search section begins here -->
     <section class="search">
@@ -141,6 +148,8 @@
         <p>All right reserved. made with <span>&#128151</span></p>
     </section>
     <!-- Footer ends here -->
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
